@@ -14,7 +14,7 @@ A simple weather application with a **Flask backend** and a **JavaScript fronten
 ### Backend (Flask)
 1. **Clone the Repository**:
    ```
-   git clone https://github.com/yourusername/weather-app.git
+   git clone https://github.com/poujoux/weather.git
    cd weather-app
    ```
 
@@ -58,4 +58,4 @@ A simple weather application with a **Flask backend** and a **JavaScript fronten
    ```
 
 ## License
-This project is licensed under the MIT License.H
+This project is licensed under the MIT License.
