@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import JS Example</title>
+    <style>
+        a {
+            font-size: 20px;
+        }
+        .show {
+            display: none;
+        }
+        .show.see {
+            display: block;
+        }
+        .credits {
+            position: absolute;
+            line-height: 1px;
+            bottom: 0;
+        }
+        .credits a{
+            font-size: 5px;
+
+        }
+	.credits h{
+            font-size: 8px;
+
+        }
+    </style>
+</head>
+<body>
+
+	<div class="show see" id="linkdiv">
+		<a href="#" onclick="obtweather('London')">London<br/></a>
+		<a href="#" onclick="obtweather('Athens')">Athens<br/></a>
+		<img src="/static/images/add.png" id="cl" width="15"/>
+	</div>
+	<div class="show" id="textdiv"></div>
+	<div class="show" id="imgdiv"></div>
+	<br/>
+
+	<div class="show" id="addcitydiv">
+		<input type="text" id="yourcity" list="listbox" placeholder="Search to add a city" required/>
+		<datalist id="listbox"></datalist>
+		<button onclick="addcity()">Add your city</button>
+	</div>	
+
+
+    <!--- Credits --->
+    <div class="credits">
+	<h5>Credits</h5>
+        <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by Yudhi Restu - Flaticon</a>
+        <br/>
+        <a href="https://www.flaticon.com/free-icons/delete" title="delete icons">Delete icons created by Pixel perfect - Flaticon</a>
+        <br/>
+        <a href="https://www.flaticon.com/free-icons/summer" title="summer icons">Summer icons created by Freepik - Flaticon</a>
+        <br/>
+        <a href="https://www.flaticon.com/free-icons/cloud" title="cloud icons">Cloud icons created by Alfredo Hernandez - Flaticon</a>
+        <br/>
+        <a href="https://www.flaticon.com/free-icons/rain" title="rain icons">Rain icons created by iconixar - Flaticon</a>
+        <br/>
+        <a href="https://www.flaticon.com/free-icons/snowy" title="snowy icons">Snowy icons created by bqlqn - Flaticon</a><a href="https://www.flaticon.com/free-icons/hurricane" title="hurricane icons">Hurricane icons created by juicy_fish - Flaticon</a>
+        <br/>
+    </div>
+
+	<script src="{{ url_for('static', filename='js/script.js') }}"></script> 
+
+	
+</body>
+</html>
